@@ -40,7 +40,7 @@ export class AuthService {
 
     const token = await ApiFeatures.assignJwtToken(
       //@ts-ignore
-      user._id.toString(),
+      user._id,
       this.jwtService,
     );
 
@@ -68,7 +68,7 @@ export class AuthService {
     }
 
     const token = await ApiFeatures.assignJwtToken(
-      user._id.toString(),
+      user._id,
       this.jwtService,
     );
 
