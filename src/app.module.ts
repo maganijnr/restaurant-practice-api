@@ -11,7 +11,7 @@ import { MealModule } from './meal/meal.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: `.env.development`,
+      envFilePath: `.env.local`,
       isGlobal: true,
     }),
     MongooseModule.forRoot(
